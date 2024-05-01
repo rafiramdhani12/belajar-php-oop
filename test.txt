@@ -1,0 +1,67 @@
+<?php 
+require  "Model/Robot.php";
+
+$robot1 = new Robot();
+
+$robot1->name = "Rusdimus Prime";
+$robot1->color = "blue-white-red";
+$robot1->size = "badhag";
+
+$robot2 = new Robot();
+
+$robot2->name = "Ambatron";
+$robot2->color = "silver";
+$robot2->size = "badhag";
+
+var_dump($robot1);
+echo "<br>";
+var_dump($robot2);
+
+$robot1 = new Robot();
+$robot1 ->set_name("Rusdimus Prime");
+$robot1 ->set_color("Blue-Red-White");
+$robot1 ->set_size("Badhag");
+
+
+$robot2 = new Robot();
+$robot2 ->set_name("Ambatron");
+$robot2 ->set_color("Silver");
+$robot2 ->set_size("Badhag");
+
+
+
+var_dump($robot1);
+echo "<br>";
+var_dump($robot2);
+
+ function __construct(){
+        // automatis akan berjalan jika object dibuat
+        echo "fungsi construct sedang dijalankan" ;
+    }
+
+    function test(){
+        echo " ini adalah function test ";
+    }
+
+$robot1 = new Robot("Rusdimus Prime","Blue-WHite-Red","Badhag");
+
+
+var_dump($robot1);
+
+echo "<br>";
+echo "script sudah selesai";
+echo "<br>";
+
+$guru1 = new Guru("Asep Mandalika",30);
+
+$guru1->sayHello();
+echo  "<br>";
+$guru1->aktifitas()
+
+visibilty / acces modifier
+
+public = bentuk default bisa diakses darimana aja
+private = hanya bisa diakses oleh class tersebut
+protected = hanya bisa diakses oleh class tsb dan child nya
+
+?>
